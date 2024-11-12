@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file,CMakeFiles/windows.dir/link.d CMakeFiles/windows.dir/windows.c.o -o windows  ../src/libglfw3.a -lm /usr/lib/librt.a -lm -ldl

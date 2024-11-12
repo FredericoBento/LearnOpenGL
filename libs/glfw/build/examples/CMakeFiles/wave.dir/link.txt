@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file,CMakeFiles/wave.dir/link.d CMakeFiles/wave.dir/wave.c.o -o wave  ../src/libglfw3.a -lm /usr/lib/librt.a -lm -ldl

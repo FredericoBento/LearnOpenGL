@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file,CMakeFiles/msaa.dir/link.d CMakeFiles/msaa.dir/msaa.c.o CMakeFiles/msaa.dir/__/deps/getopt.c.o -o msaa  ../src/libglfw3.a -lm /usr/lib/librt.a -lm -ldl

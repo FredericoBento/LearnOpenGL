@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file,CMakeFiles/gears.dir/link.d CMakeFiles/gears.dir/gears.c.o -o gears  ../src/libglfw3.a -lm /usr/lib/librt.a -lm -ldl

@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file,CMakeFiles/gamma.dir/link.d CMakeFiles/gamma.dir/gamma.c.o -o gamma  ../src/libglfw3.a -lm /usr/lib/librt.a -lm -ldl

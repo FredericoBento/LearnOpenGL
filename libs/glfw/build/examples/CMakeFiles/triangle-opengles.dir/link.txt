@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file,CMakeFiles/triangle-opengles.dir/link.d "CMakeFiles/triangle-opengles.dir/triangle-opengles.c.o" -o triangle-opengles  ../src/libglfw3.a -lm /usr/lib/librt.a -lm -ldl

@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file,CMakeFiles/splitview.dir/link.d CMakeFiles/splitview.dir/splitview.c.o -o splitview  ../src/libglfw3.a -lm /usr/lib/librt.a -lm -ldl

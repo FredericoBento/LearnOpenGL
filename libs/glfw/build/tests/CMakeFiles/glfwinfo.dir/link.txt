@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file,CMakeFiles/glfwinfo.dir/link.d CMakeFiles/glfwinfo.dir/glfwinfo.c.o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o -o glfwinfo  ../src/libglfw3.a -lm /usr/lib/librt.a -lm -ldl

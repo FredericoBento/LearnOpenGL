@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file,CMakeFiles/threads.dir/link.d CMakeFiles/threads.dir/threads.c.o CMakeFiles/threads.dir/__/deps/tinycthread.c.o -o threads  ../src/libglfw3.a -lm /usr/lib/librt.a -ldl

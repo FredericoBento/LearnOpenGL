@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file,CMakeFiles/iconify.dir/link.d CMakeFiles/iconify.dir/iconify.c.o CMakeFiles/iconify.dir/__/deps/getopt.c.o -o iconify  ../src/libglfw3.a -lm /usr/lib/librt.a -lm -ldl
