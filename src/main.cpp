@@ -94,7 +94,8 @@ int main() {
 
     // draw_rectangle(window, shaderProgram);
     // draw_triangle(window, shaderProgram);
-    draw_two_triangles(window, shaderProgram);
+    // draw_two_triangles(window, shaderProgram);
+    draw_two_triangles_different_color(window);
 
     glDeleteProgram(shaderProgram);
 
