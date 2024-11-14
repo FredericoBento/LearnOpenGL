@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LearnOpenGL.dir/link.d"
+  "CMakeFiles/LearnOpenGL.dir/src/Shader.cpp.o"
+  "CMakeFiles/LearnOpenGL.dir/src/Shader.cpp.o.d"
   "CMakeFiles/LearnOpenGL.dir/src/glad.c.o"
   "CMakeFiles/LearnOpenGL.dir/src/glad.c.o.d"
   "CMakeFiles/LearnOpenGL.dir/src/main.cpp.o"

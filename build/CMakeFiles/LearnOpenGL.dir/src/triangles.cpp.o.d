@@ -137,11 +137,36 @@ CMakeFiles/LearnOpenGL.dir/src/triangles.cpp.o: \
  /usr/include/c++/14.2.1/bits/locale_facets.tcc \
  /usr/include/c++/14.2.1/bits/basic_ios.tcc \
  /usr/include/c++/14.2.1/bits/ostream.tcc /usr/include/c++/14.2.1/istream \
- /usr/include/c++/14.2.1/bits/istream.tcc \
+ /usr/include/c++/14.2.1/bits/istream.tcc /usr/include/c++/14.2.1/math.h \
+ /usr/include/c++/14.2.1/cmath /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/14.2.1/bits/specfun.h \
+ /usr/include/c++/14.2.1/limits /usr/include/c++/14.2.1/tr1/gamma.tcc \
+ /usr/include/c++/14.2.1/tr1/special_function_util.h \
+ /usr/include/c++/14.2.1/tr1/bessel_function.tcc \
+ /usr/include/c++/14.2.1/tr1/beta_function.tcc \
+ /usr/include/c++/14.2.1/tr1/ell_integral.tcc \
+ /usr/include/c++/14.2.1/tr1/exp_integral.tcc \
+ /usr/include/c++/14.2.1/tr1/hypergeometric.tcc \
+ /usr/include/c++/14.2.1/tr1/legendre_function.tcc \
+ /usr/include/c++/14.2.1/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/14.2.1/tr1/poly_hermite.tcc \
+ /usr/include/c++/14.2.1/tr1/poly_laguerre.tcc \
+ /usr/include/c++/14.2.1/tr1/riemann_zeta.tcc \
+ /home/fredarch/Documents/Github/LearnOpenGl/include/Shader.h \
  /home/fredarch/Documents/Github/LearnOpenGl/include/glad/glad.h \
  /home/fredarch/Documents/Github/LearnOpenGl/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h \
+ /usr/include/bits/stdint-least.h /usr/include/c++/14.2.1/fstream \
+ /usr/include/c++/14.2.1/bits/codecvt.h \
+ /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/14.2.1/bits/fstream.tcc /usr/include/c++/14.2.1/sstream \
+ /usr/include/c++/14.2.1/bits/sstream.tcc \
  /home/fredarch/Documents/Github/LearnOpenGl/libs/glfw/include/GLFW/glfw3.h \
  /home/fredarch/Documents/Github/LearnOpenGl/include/functions.h
