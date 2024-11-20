@@ -6,7 +6,6 @@
 #include "functions.h"
 
 
-
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void process_input(GLFWwindow* window);
 
@@ -100,7 +99,17 @@ int main() {
     // draw_multicolor_triangle_without_uniform(window); 
     // draw_triangle_upside_down(window);
     // draw_triangle_right_side(window);
-    draw_triangle_right_side_other_color(window);
+    // draw_triangle_right_side_other_color(window);
+    // draw_rectangle_container_multiple_texture(window);
+    // draw_rectangle_container_multiple_texture_inverse(window);
+    // draw_rectangle_container_multiple_texture_different_wrapping(window);
+    // draw_rectangle_container_multiple_texture_783(window);
+    // draw_rectangle_container_multiple_texture_784(window);
+    // draw_rectangle_container_multiple_texture_translate(window);
+    // going_3d_plane(window);
+    // smile_cube_3d(window);
+    // smile_ten_cubes_3d(window);
+    multicolor_cubes(window);
 
     glDeleteProgram(shaderProgram);
 

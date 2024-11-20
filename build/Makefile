@@ -213,6 +213,30 @@ update_mappings/fast:
 	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
+src/3d.o: src/3d.cpp.o
+.PHONY : src/3d.o
+
+# target to build an object file
+src/3d.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LearnOpenGL.dir/build.make CMakeFiles/LearnOpenGL.dir/src/3d.cpp.o
+.PHONY : src/3d.cpp.o
+
+src/3d.i: src/3d.cpp.i
+.PHONY : src/3d.i
+
+# target to preprocess a source file
+src/3d.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LearnOpenGL.dir/build.make CMakeFiles/LearnOpenGL.dir/src/3d.cpp.i
+.PHONY : src/3d.cpp.i
+
+src/3d.s: src/3d.cpp.s
+.PHONY : src/3d.s
+
+# target to generate assembly for a file
+src/3d.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LearnOpenGL.dir/build.make CMakeFiles/LearnOpenGL.dir/src/3d.cpp.s
+.PHONY : src/3d.cpp.s
+
 src/Shader.o: src/Shader.cpp.o
 .PHONY : src/Shader.o
 
@@ -309,6 +333,30 @@ src/rectangle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LearnOpenGL.dir/build.make CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.s
 .PHONY : src/rectangle.cpp.s
 
+src/stb_image.o: src/stb_image.cpp.o
+.PHONY : src/stb_image.o
+
+# target to build an object file
+src/stb_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LearnOpenGL.dir/build.make CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o
+.PHONY : src/stb_image.cpp.o
+
+src/stb_image.i: src/stb_image.cpp.i
+.PHONY : src/stb_image.i
+
+# target to preprocess a source file
+src/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LearnOpenGL.dir/build.make CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.i
+.PHONY : src/stb_image.cpp.i
+
+src/stb_image.s: src/stb_image.cpp.s
+.PHONY : src/stb_image.s
+
+# target to generate assembly for a file
+src/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LearnOpenGL.dir/build.make CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.s
+.PHONY : src/stb_image.cpp.s
+
 src/triangles.o: src/triangles.cpp.o
 .PHONY : src/triangles.o
 
@@ -349,6 +397,9 @@ help:
 	@echo "... update_mappings"
 	@echo "... LearnOpenGL"
 	@echo "... glfw"
+	@echo "... src/3d.o"
+	@echo "... src/3d.i"
+	@echo "... src/3d.s"
 	@echo "... src/Shader.o"
 	@echo "... src/Shader.i"
 	@echo "... src/Shader.s"
@@ -361,6 +412,9 @@ help:
 	@echo "... src/rectangle.o"
 	@echo "... src/rectangle.i"
 	@echo "... src/rectangle.s"
+	@echo "... src/stb_image.o"
+	@echo "... src/stb_image.i"
+	@echo "... src/stb_image.s"
 	@echo "... src/triangles.o"
 	@echo "... src/triangles.i"
 	@echo "... src/triangles.s"

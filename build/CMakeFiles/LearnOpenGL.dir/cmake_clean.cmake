@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LearnOpenGL.dir/link.d"
+  "CMakeFiles/LearnOpenGL.dir/src/3d.cpp.o"
+  "CMakeFiles/LearnOpenGL.dir/src/3d.cpp.o.d"
   "CMakeFiles/LearnOpenGL.dir/src/Shader.cpp.o"
   "CMakeFiles/LearnOpenGL.dir/src/Shader.cpp.o.d"
   "CMakeFiles/LearnOpenGL.dir/src/glad.c.o"
@@ -8,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LearnOpenGL.dir/src/main.cpp.o.d"
   "CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o"
   "CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o.d"
+  "CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o"
+  "CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o.d"
   "CMakeFiles/LearnOpenGL.dir/src/triangles.cpp.o"
   "CMakeFiles/LearnOpenGL.dir/src/triangles.cpp.o.d"
   "LearnOpenGL"

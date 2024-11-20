@@ -1,6 +1,12 @@
 [
 {
   "directory": "/home/fredarch/Documents/Github/LearnOpenGl/build",
+  "command": "/usr/bin/c++  -I/home/fredarch/Documents/Github/LearnOpenGl/include -I/home/fredarch/Documents/Github/LearnOpenGl/libs/glfw/include -std=gnu++17 -Wall -Wextra -Wpedantic -Wshadow -Wformat=2 -o CMakeFiles/LearnOpenGL.dir/src/3d.cpp.o -c /home/fredarch/Documents/Github/LearnOpenGl/src/3d.cpp",
+  "file": "/home/fredarch/Documents/Github/LearnOpenGl/src/3d.cpp",
+  "output": "CMakeFiles/LearnOpenGL.dir/src/3d.cpp.o"
+},
+{
+  "directory": "/home/fredarch/Documents/Github/LearnOpenGl/build",
   "command": "/usr/bin/c++  -I/home/fredarch/Documents/Github/LearnOpenGl/include -I/home/fredarch/Documents/Github/LearnOpenGl/libs/glfw/include -std=gnu++17 -Wall -Wextra -Wpedantic -Wshadow -Wformat=2 -o CMakeFiles/LearnOpenGL.dir/src/Shader.cpp.o -c /home/fredarch/Documents/Github/LearnOpenGl/src/Shader.cpp",
   "file": "/home/fredarch/Documents/Github/LearnOpenGl/src/Shader.cpp",
   "output": "CMakeFiles/LearnOpenGL.dir/src/Shader.cpp.o"
@@ -22,6 +28,12 @@
   "command": "/usr/bin/c++  -I/home/fredarch/Documents/Github/LearnOpenGl/include -I/home/fredarch/Documents/Github/LearnOpenGl/libs/glfw/include -std=gnu++17 -Wall -Wextra -Wpedantic -Wshadow -Wformat=2 -o CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o -c /home/fredarch/Documents/Github/LearnOpenGl/src/rectangle.cpp",
   "file": "/home/fredarch/Documents/Github/LearnOpenGl/src/rectangle.cpp",
   "output": "CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o"
+},
+{
+  "directory": "/home/fredarch/Documents/Github/LearnOpenGl/build",
+  "command": "/usr/bin/c++  -I/home/fredarch/Documents/Github/LearnOpenGl/include -I/home/fredarch/Documents/Github/LearnOpenGl/libs/glfw/include -std=gnu++17 -Wall -Wextra -Wpedantic -Wshadow -Wformat=2 -o CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o -c /home/fredarch/Documents/Github/LearnOpenGl/src/stb_image.cpp",
+  "file": "/home/fredarch/Documents/Github/LearnOpenGl/src/stb_image.cpp",
+  "output": "CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o"
 },
 {
   "directory": "/home/fredarch/Documents/Github/LearnOpenGl/build",
