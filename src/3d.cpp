@@ -612,7 +612,7 @@ void smile_ten_cubes_3d(GLFWwindow* window)
     glDeleteBuffers(1, &VBO);
 }
 
-void multicolor_cubes(GLFWwindow* window)
+void rotating_cube(GLFWwindow* window)
 {
     float vertices[] = {
         -0.5f, -0.5f,  0.5f,
@@ -726,6 +726,147 @@ void multicolor_cubes(GLFWwindow* window)
 
         glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
         glDrawElements(GL_TRIANGLES, sizeof(indices)/sizeof(unsigned int), GL_UNSIGNED_INT, 0);
+
+        glBindVertexArray(0);
+
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
+
+    glDeleteBuffers(1, &VBO);
+    glDeleteBuffers(1, &EBO);
+    glDeleteVertexArrays(1, &VAO);
+}
+void rotating_multiple_cubes(GLFWwindow* window)
+{
+    float vertices[] = {
+        -0.5f, -0.5f,  0.5f,
+        -0.5f, -0.5f, -0.5f,
+         0.5f, -0.5f,  0.5f,
+         0.5f, -0.5f, -0.5f,
+
+        -0.5f,  0.5f,  0.5f,
+        -0.5f,  0.5f, -0.5f,
+         0.5f,  0.5f,  0.5f,
+         0.5f,  0.5f, -0.5f,
+    };
+
+    unsigned int indices[] = {
+        // Bottom Face
+        0, 1, 2,
+        2, 3, 1,        
+        // Top Face
+        4, 5, 6,
+        6, 7, 5,
+        // Left Face
+        0, 1, 5,
+        5, 0, 4,
+        // Right Face
+        2, 3, 7,
+        7, 2, 6,
+        // Front Face
+        0, 2, 6,
+        6, 0, 4,
+        // Back Face
+        1, 3, 7,
+        7, 1, 5
+    };
+
+    unsigned int VAO, VBO, EBO;
+
+    glGenBuffers(1, &VBO);
+    glGenBuffers(1, &EBO);
+
+    glGenVertexArrays(1, &VAO);
+
+    glBindVertexArray(VAO);
+
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+
+    glBindVertexArray(0);
+
+    glm::mat4 view = glm::mat4(1.0f);
+    view = glm::translate(view, glm::vec3(0.0f, 0.0f, -4.0f));
+
+    glm::mat4 projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
+
+    Shader shader("shaders/multicolor_cubes/shader.vs", "shaders/multicolor_cubes/shader.fs");    
+
+    shader.use();
+
+    shader.setMat4("view", view);
+    shader.setMat4("projection", projection);
+
+    glEnable(GL_DEPTH_TEST);
+    glLineWidth(3.0f);
+
+    float rotationAngle = 0.0f;
+    float rotationSpeed = 0.05f;
+
+
+    glm::vec3 positions[] = {
+        glm::vec3(-1.0f, 1.0f, 0.5f),
+        glm::vec3( 0.0f, 1.0f, 0.5f),
+        glm::vec3( 1.0f, 1.0f, 0.5f),
+
+        glm::vec3(-1.0f, 0.0f, 0.5f),
+        glm::vec3( 0.0f, 0.0f, 0.5f),
+        glm::vec3( 1.0f, 0.0f, 0.5f),
+
+        glm::vec3(-1.0f, -1.0f, 0.5f),
+        glm::vec3( 0.0f, -1.0f, 0.5f),
+        glm::vec3( 1.0f, -1.0f, 0.5f),
+    };
+
+    while (!glfwWindowShouldClose(window))
+    {
+
+        process_input(window);
+
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        shader.use();
+        glBindVertexArray(VAO);
+
+
+        rotationAngle += rotationSpeed * glfwGetTime() + 1.0f;
+        glfwSetTime(0.0);
+
+        if (rotationAngle >= 360.0f)
+        {
+            rotationAngle = 0; 
+        }
+
+        for (int i = 0; i < 9; i++)
+        {
+            glm::mat4 model = glm::mat4(1.0f);
+
+            model = glm::translate(model, positions[i]);
+            model = glm::rotate(model, glm::radians(rotationAngle), glm::vec3(0.0f, 1.0f, 1.0f));
+            model = glm::scale(model, glm::vec3(0.3f, 0.3f, 0.3f));
+
+            glm::vec3 color = glm::vec3(0.0f, 1.0f, 0.0f);
+
+            shader.setMat4("model", model);
+            shader.setVec3("color", color);
+
+            glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+            glDrawElements(GL_TRIANGLES, sizeof(indices)/sizeof(unsigned int), GL_UNSIGNED_INT, 0);
+
+            color = glm::vec3(0.0f, 0.0f, 1.0f);
+            shader.setVec3("color", color);
+
+            glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+            glDrawElements(GL_TRIANGLES, sizeof(indices)/sizeof(unsigned int), GL_UNSIGNED_INT, 0);
+        }
 
         glBindVertexArray(0);
 

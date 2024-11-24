@@ -28,6 +28,7 @@ void going_3d_plane(GLFWwindow* window);
 void smile_cube_3d(GLFWwindow* window);
 void smile_ten_cubes_3d(GLFWwindow* window);
 
-void multicolor_cubes(GLFWwindow* window);
+void rotating_cube(GLFWwindow* window);
+void rotating_multiple_cubes(GLFWwindow* window);
 
 #endif

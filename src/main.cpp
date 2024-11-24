@@ -109,7 +109,9 @@ int main() {
     // going_3d_plane(window);
     // smile_cube_3d(window);
     // smile_ten_cubes_3d(window);
-    multicolor_cubes(window);
+    // multicolor_cubes(window);
+    // rotating_cube(window);
+    rotating_multiple_cubes(window);
 
     glDeleteProgram(shaderProgram);
 
