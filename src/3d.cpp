@@ -792,8 +792,8 @@ void rotating_multiple_cubes(GLFWwindow* window)
 
     glBindVertexArray(0);
 
-    glm::mat4 view = glm::mat4(1.0f);
-    view = glm::translate(view, glm::vec3(0.0f, 0.0f, -4.0f));
+    // glm::mat4 view = glm::mat4(1.0f);
+    // view = glm::translate(view, glm::vec3(0.0f, 0.0f, -8.0f));
 
     glm::mat4 projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
 
@@ -801,7 +801,7 @@ void rotating_multiple_cubes(GLFWwindow* window)
 
     shader.use();
 
-    shader.setMat4("view", view);
+    // shader.setMat4("view", view);
     shader.setMat4("projection", projection);
 
     glEnable(GL_DEPTH_TEST);
@@ -825,6 +825,8 @@ void rotating_multiple_cubes(GLFWwindow* window)
         glm::vec3( 1.0f, -1.0f, 0.5f),
     };
 
+    double time = 0.0f;
+
     while (!glfwWindowShouldClose(window))
     {
 
@@ -836,14 +838,201 @@ void rotating_multiple_cubes(GLFWwindow* window)
         shader.use();
         glBindVertexArray(VAO);
 
-
-        rotationAngle += rotationSpeed * glfwGetTime() + 1.0f;
+        time += glfwGetTime();
+        rotationAngle += rotationSpeed * glfwGetTime()+ 1.0f;
         glfwSetTime(0.0);
 
         if (rotationAngle >= 360.0f)
         {
             rotationAngle = 0; 
         }
+
+        float radius = 5.0f;
+        float camX = sin(time) * radius;
+        float camZ = cos(time) * radius;
+
+        glm::mat4 view;
+        view = glm::lookAt(glm::vec3(camX, 0.0f, camZ),
+                           glm::vec3(0.0f, 0.0f, 0.0f),
+                           glm::vec3(0.0f, 1.0f, 0.0f)
+                );
+
+        shader.setMat4("view", view);
+
+        for (int i = 0; i < 9; i++)
+        {
+            glm::mat4 model = glm::mat4(1.0f);
+
+            model = glm::translate(model, positions[i]);
+            model = glm::rotate(model, glm::radians(rotationAngle), glm::vec3(0.0f, 1.0f, 1.0f));
+            model = glm::scale(model, glm::vec3(0.3f, 0.3f, 0.3f));
+
+            glm::vec3 color = glm::vec3(0.0f, 1.0f, 0.0f);
+
+            shader.setMat4("model", model);
+            shader.setVec3("color", color);
+
+            glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+            glDrawElements(GL_TRIANGLES, sizeof(indices)/sizeof(unsigned int), GL_UNSIGNED_INT, 0);
+
+            color = glm::vec3(0.0f, 0.0f, 1.0f);
+            shader.setVec3("color", color);
+
+            glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+            glDrawElements(GL_TRIANGLES, sizeof(indices)/sizeof(unsigned int), GL_UNSIGNED_INT, 0);
+        }
+
+        glBindVertexArray(0);
+
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
+
+    glDeleteBuffers(1, &VBO);
+    glDeleteBuffers(1, &EBO);
+    glDeleteVertexArrays(1, &VAO);
+}
+
+void rotating_multiple_cubes_with_camera(GLFWwindow* window)
+{
+    float vertices[] = {
+        -0.5f, -0.5f,  0.5f,
+        -0.5f, -0.5f, -0.5f,
+         0.5f, -0.5f,  0.5f,
+         0.5f, -0.5f, -0.5f,
+
+        -0.5f,  0.5f,  0.5f,
+        -0.5f,  0.5f, -0.5f,
+         0.5f,  0.5f,  0.5f,
+         0.5f,  0.5f, -0.5f,
+    };
+
+    unsigned int indices[] = {
+        // Bottom Face
+        0, 1, 2,
+        2, 3, 1,        
+        // Top Face
+        4, 5, 6,
+        6, 7, 5,
+        // Left Face
+        0, 1, 5,
+        5, 0, 4,
+        // Right Face
+        2, 3, 7,
+        7, 2, 6,
+        // Front Face
+        0, 2, 6,
+        6, 0, 4,
+        // Back Face
+        1, 3, 7,
+        7, 1, 5
+    };
+
+    unsigned int VAO, VBO, EBO;
+
+    glGenBuffers(1, &VBO);
+    glGenBuffers(1, &EBO);
+
+    glGenVertexArrays(1, &VAO);
+
+    glBindVertexArray(VAO);
+
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+
+    glBindVertexArray(0);
+
+    glm::mat4 projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
+
+    Shader shader("shaders/multicolor_cubes/shader.vs", "shaders/multicolor_cubes/shader.fs");    
+
+    shader.use();
+
+    // shader.setMat4("view", view);
+    shader.setMat4("projection", projection);
+
+    glEnable(GL_DEPTH_TEST);
+    glLineWidth(3.0f);
+
+    float rotationAngle = 0.0f;
+    float rotationSpeed = 0.05f;
+
+
+    glm::vec3 positions[] = {
+        glm::vec3(-1.0f, 1.0f, 0.5f),
+        glm::vec3( 0.0f, 1.0f, 0.5f),
+        glm::vec3( 1.0f, 1.0f, 0.5f),
+
+        glm::vec3(-1.0f, 0.0f, 0.5f),
+        glm::vec3( 0.0f, 0.0f, 0.5f),
+        glm::vec3( 1.0f, 0.0f, 0.5f),
+
+        glm::vec3(-1.0f, -1.0f, 0.5f),
+        glm::vec3( 0.0f, -1.0f, 0.5f),
+        glm::vec3( 1.0f, -1.0f, 0.5f),
+    };
+
+    glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
+    glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+    glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
+
+    glm::mat4 view;
+
+    shader.setMat4("view", view);
+
+    const float cameraSpeedScalar = 3.5f;
+
+    float deltaTime = 0.0f;
+    float lastFrame = 0.0f;
+    float currentFrame = 0.0f;
+    float cameraSpeed = 0.0f;
+    
+
+    while (!glfwWindowShouldClose(window))
+    {
+        currentFrame += glfwGetTime();
+        deltaTime = currentFrame - lastFrame;
+        lastFrame = currentFrame;
+
+        cameraSpeed = cameraSpeedScalar * deltaTime;
+
+        process_input(window);
+      
+        if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+            cameraPos += cameraSpeed * cameraFront;
+
+        if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+            cameraPos -= cameraSpeed * cameraFront;
+
+        if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+            cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+
+        if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+            cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        shader.use();
+        glBindVertexArray(VAO);
+
+        rotationAngle += rotationSpeed * glfwGetTime()+ 1.0f;
+        glfwSetTime(0.0);
+
+        if (rotationAngle >= 360.0f)
+        {
+            rotationAngle = 0; 
+        }
+
+
+        view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
+        shader.setMat4("view", view);
 
         for (int i = 0; i < 9; i++)
         {

@@ -30,5 +30,6 @@ void smile_ten_cubes_3d(GLFWwindow* window);
 
 void rotating_cube(GLFWwindow* window);
 void rotating_multiple_cubes(GLFWwindow* window);
+void rotating_multiple_cubes_with_camera(GLFWwindow* window);
 
 #endif

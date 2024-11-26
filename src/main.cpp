@@ -111,7 +111,8 @@ int main() {
     // smile_ten_cubes_3d(window);
     // multicolor_cubes(window);
     // rotating_cube(window);
-    rotating_multiple_cubes(window);
+    // rotating_multiple_cubes(window);
+    rotating_multiple_cubes_with_camera(window);
 
     glDeleteProgram(shaderProgram);
 
@@ -129,5 +130,5 @@ void process_input(GLFWwindow* window)
     if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
     {
         glfwSetWindowShouldClose(window, true);
-    }
+    }   
 }
