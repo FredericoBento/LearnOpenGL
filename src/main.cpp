@@ -112,7 +112,9 @@ int main() {
     // multicolor_cubes(window);
     // rotating_cube(window);
     // rotating_multiple_cubes(window);
-    rotating_multiple_cubes_with_camera(window);
+    // rotating_multiple_cubes_with_camera(window);
+    rotating_multiple_cubes_with_mouse_camera(window);
+    // rotating_multiple_cubes_with_mouse_camera_class(window);
 
     glDeleteProgram(shaderProgram);
 
@@ -122,6 +124,8 @@ int main() {
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
+    (void) window;
+
     glViewport(0, 0, width, height);
 }
 

@@ -151,12 +151,12 @@ libs/glfw/src/clean: libs/glfw/src/CMakeFiles/update_mappings.dir/clean
 CMakeFiles/LearnOpenGL.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LearnOpenGL.dir/build.make CMakeFiles/LearnOpenGL.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LearnOpenGL.dir/build.make CMakeFiles/LearnOpenGL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target LearnOpenGL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target LearnOpenGL"
 .PHONY : CMakeFiles/LearnOpenGL.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LearnOpenGL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles 54
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LearnOpenGL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles 0
 .PHONY : CMakeFiles/LearnOpenGL.dir/rule
@@ -213,7 +213,7 @@ libs/glfw/CMakeFiles/uninstall.dir/clean:
 libs/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54 "Built target glfw"
 .PHONY : libs/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -244,7 +244,7 @@ libs/glfw/src/CMakeFiles/glfw.dir/clean:
 libs/glfw/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=54 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=55 "Built target update_mappings"
 .PHONY : libs/glfw/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
