@@ -16,17 +16,17 @@ class Camera
 public:
     glm::vec3 Position;
     glm::vec3 Front;
-    glm::vec3 Up = glm::vec3(0.0f, 9.0f, 0.0f);
+    glm::vec3 Up = glm::vec3(0.0f, 1.0f, 0.0f);
 
     float Fov = 45.0f;
     float Speed = 0.0f;
     float SpeedMultiplier = 3.5f;
-    float Sensitivity = 0.0f;
+    float Sensitivity = 0.1f;
 
     float Yaw = 0.0f;
     float Pitch = 0.0f;
 
-    float LastX = 400, LastY = 300;
+    float LastX = 400.0f, LastY = 300.0f;
     bool FirstMouse = true;
 
 

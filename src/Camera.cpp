@@ -1,5 +1,6 @@
 #include "Camera.h"
 #include "GLFW/glfw3.h"
+#include <iostream>
 
 Camera::Camera(glm::vec3 camera_position)
 {
@@ -47,7 +48,7 @@ void Camera::ProcessKeyboard(CameraMovement direction, float deltaTime)
           break;
     }
 
-    UpdateDirection();
+    // UpdateDirection();
 }
 
 void Camera::MouseMovementCallback(GLFWwindow* window, double xpos, double ypos)
@@ -100,7 +101,7 @@ void Camera::ProcessMouseScroll(double xoffset, double yoffset)
 {
     (void) xoffset;
 
-    Fov -= (float)yoffset;
+    Fov -= static_cast<float>(yoffset);
 
     if (Fov < 1.0f)
       Fov = 1.0f;

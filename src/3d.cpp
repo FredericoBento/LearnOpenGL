@@ -1265,6 +1265,7 @@ void rotating_multiple_cubes_with_mouse_camera(GLFWwindow* window)
 
 void rotating_multiple_cubes_with_mouse_camera_class(GLFWwindow* window)
 {
+
     float vertices[] = {
         -0.5f, -0.5f,  0.5f,
         -0.5f, -0.5f, -0.5f,
@@ -1318,11 +1319,6 @@ void rotating_multiple_cubes_with_mouse_camera_class(GLFWwindow* window)
 
     glBindVertexArray(0);
 
-
-    Shader shader("shaders/multicolor_cubes/shader.vs", "shaders/multicolor_cubes/shader.fs");    
-
-    shader.use();
-
     glEnable(GL_DEPTH_TEST);
     glLineWidth(3.0f);
 
@@ -1344,7 +1340,10 @@ void rotating_multiple_cubes_with_mouse_camera_class(GLFWwindow* window)
         glm::vec3( 1.0f, -1.0f, 0.5f),
     };
 
+    Shader shader("shaders/multicolor_cubes/shader.vs", "shaders/multicolor_cubes/shader.fs");    
+
     Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
+    glfwSetWindowUserPointer(window, &camera); // To make Camera Callbacks work
 
     float deltaTime = 0.0f;
     float lastFrame = 0.0f;
