@@ -69,8 +69,8 @@ void Camera::ProcessMouseMovement(double xpos, double ypos)
         FirstMouse = false;
     }
 
-    float xoffset = xpos - LastX;
-    float yoffset = ypos - LastY;
+    float xoffset = static_cast<float>(xpos) - LastX;
+    float yoffset = LastY - static_cast<float>(ypos);
 
     LastX = xpos;
     LastY = ypos;

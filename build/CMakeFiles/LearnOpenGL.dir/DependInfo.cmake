@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/fredarch/Documents/Github/LearnOpenGl/src/3d.cpp" "CMakeFiles/LearnOpenGL.dir/src/3d.cpp.o" "gcc" "CMakeFiles/LearnOpenGL.dir/src/3d.cpp.o.d"
   "/home/fredarch/Documents/Github/LearnOpenGl/src/Camera.cpp" "CMakeFiles/LearnOpenGL.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/LearnOpenGL.dir/src/Camera.cpp.o.d"
   "/home/fredarch/Documents/Github/LearnOpenGl/src/Shader.cpp" "CMakeFiles/LearnOpenGL.dir/src/Shader.cpp.o" "gcc" "CMakeFiles/LearnOpenGL.dir/src/Shader.cpp.o.d"
+  "/home/fredarch/Documents/Github/LearnOpenGl/src/light.cpp" "CMakeFiles/LearnOpenGL.dir/src/light.cpp.o" "gcc" "CMakeFiles/LearnOpenGL.dir/src/light.cpp.o.d"
   "/home/fredarch/Documents/Github/LearnOpenGl/src/main.cpp" "CMakeFiles/LearnOpenGL.dir/src/main.cpp.o" "gcc" "CMakeFiles/LearnOpenGL.dir/src/main.cpp.o.d"
   "/home/fredarch/Documents/Github/LearnOpenGl/src/rectangle.cpp" "CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o" "gcc" "CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o.d"
   "/home/fredarch/Documents/Github/LearnOpenGl/src/stb_image.cpp" "CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o" "gcc" "CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o.d"

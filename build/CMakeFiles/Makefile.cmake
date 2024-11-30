@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/fredarch/Documents/Github/LearnOpenGl/CMakeLists.txt"
-  "CMakeFiles/3.31.0/CMakeCCompiler.cmake"
-  "CMakeFiles/3.31.0/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.31.0/CMakeSystem.cmake"
+  "CMakeFiles/3.31.1/CMakeCCompiler.cmake"
+  "CMakeFiles/3.31.1/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.31.1/CMakeSystem.cmake"
   "/home/fredarch/Documents/Github/LearnOpenGl/libs/glfw/CMake/cmake_uninstall.cmake.in"
   "/home/fredarch/Documents/Github/LearnOpenGl/libs/glfw/CMake/glfw3.pc.in"
   "/home/fredarch/Documents/Github/LearnOpenGl/libs/glfw/CMake/glfw3Config.cmake.in"
@@ -154,11 +154,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/3.31.0/CMakeSystem.cmake"
-  "CMakeFiles/3.31.0/CMakeCCompiler.cmake"
-  "CMakeFiles/3.31.0/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.31.0/CMakeCCompiler.cmake"
-  "CMakeFiles/3.31.0/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.31.1/CMakeSystem.cmake"
+  "CMakeFiles/3.31.1/CMakeCCompiler.cmake"
+  "CMakeFiles/3.31.1/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.31.1/CMakeCCompiler.cmake"
+  "CMakeFiles/3.31.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/glfw/src/glfw3Config.cmake"
   "libs/glfw/src/glfw3ConfigVersion.cmake"

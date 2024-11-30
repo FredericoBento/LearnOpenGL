@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LearnOpenGL.dir/src/Shader.cpp.o.d"
   "CMakeFiles/LearnOpenGL.dir/src/glad.c.o"
   "CMakeFiles/LearnOpenGL.dir/src/glad.c.o.d"
+  "CMakeFiles/LearnOpenGL.dir/src/light.cpp.o"
+  "CMakeFiles/LearnOpenGL.dir/src/light.cpp.o.d"
   "CMakeFiles/LearnOpenGL.dir/src/main.cpp.o"
   "CMakeFiles/LearnOpenGL.dir/src/main.cpp.o.d"
   "CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o"

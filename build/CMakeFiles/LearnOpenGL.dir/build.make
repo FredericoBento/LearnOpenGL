@@ -128,10 +128,24 @@ CMakeFiles/LearnOpenGL.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LearnOpenGL.dir/src/glad.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/fredarch/Documents/Github/LearnOpenGl/src/glad.c -o CMakeFiles/LearnOpenGL.dir/src/glad.c.s
 
+CMakeFiles/LearnOpenGL.dir/src/light.cpp.o: CMakeFiles/LearnOpenGL.dir/flags.make
+CMakeFiles/LearnOpenGL.dir/src/light.cpp.o: /home/fredarch/Documents/Github/LearnOpenGl/src/light.cpp
+CMakeFiles/LearnOpenGL.dir/src/light.cpp.o: CMakeFiles/LearnOpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LearnOpenGL.dir/src/light.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LearnOpenGL.dir/src/light.cpp.o -MF CMakeFiles/LearnOpenGL.dir/src/light.cpp.o.d -o CMakeFiles/LearnOpenGL.dir/src/light.cpp.o -c /home/fredarch/Documents/Github/LearnOpenGl/src/light.cpp
+
+CMakeFiles/LearnOpenGL.dir/src/light.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LearnOpenGL.dir/src/light.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fredarch/Documents/Github/LearnOpenGl/src/light.cpp > CMakeFiles/LearnOpenGL.dir/src/light.cpp.i
+
+CMakeFiles/LearnOpenGL.dir/src/light.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LearnOpenGL.dir/src/light.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fredarch/Documents/Github/LearnOpenGl/src/light.cpp -o CMakeFiles/LearnOpenGL.dir/src/light.cpp.s
+
 CMakeFiles/LearnOpenGL.dir/src/main.cpp.o: CMakeFiles/LearnOpenGL.dir/flags.make
 CMakeFiles/LearnOpenGL.dir/src/main.cpp.o: /home/fredarch/Documents/Github/LearnOpenGl/src/main.cpp
 CMakeFiles/LearnOpenGL.dir/src/main.cpp.o: CMakeFiles/LearnOpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LearnOpenGL.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LearnOpenGL.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LearnOpenGL.dir/src/main.cpp.o -MF CMakeFiles/LearnOpenGL.dir/src/main.cpp.o.d -o CMakeFiles/LearnOpenGL.dir/src/main.cpp.o -c /home/fredarch/Documents/Github/LearnOpenGl/src/main.cpp
 
 CMakeFiles/LearnOpenGL.dir/src/main.cpp.i: cmake_force
@@ -145,7 +159,7 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.s: cmake_force
 CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o: CMakeFiles/LearnOpenGL.dir/flags.make
 CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o: /home/fredarch/Documents/Github/LearnOpenGl/src/rectangle.cpp
 CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o: CMakeFiles/LearnOpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o -MF CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o.d -o CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o -c /home/fredarch/Documents/Github/LearnOpenGl/src/rectangle.cpp
 
 CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.s: cmake_force
 CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o: CMakeFiles/LearnOpenGL.dir/flags.make
 CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o: /home/fredarch/Documents/Github/LearnOpenGl/src/stb_image.cpp
 CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o: CMakeFiles/LearnOpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o -MF CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o.d -o CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o -c /home/fredarch/Documents/Github/LearnOpenGl/src/stb_image.cpp
 
 CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.i: cmake_force
@@ -173,7 +187,7 @@ CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.s: cmake_force
 CMakeFiles/LearnOpenGL.dir/src/triangles.cpp.o: CMakeFiles/LearnOpenGL.dir/flags.make
 CMakeFiles/LearnOpenGL.dir/src/triangles.cpp.o: /home/fredarch/Documents/Github/LearnOpenGl/src/triangles.cpp
 CMakeFiles/LearnOpenGL.dir/src/triangles.cpp.o: CMakeFiles/LearnOpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LearnOpenGL.dir/src/triangles.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LearnOpenGL.dir/src/triangles.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LearnOpenGL.dir/src/triangles.cpp.o -MF CMakeFiles/LearnOpenGL.dir/src/triangles.cpp.o.d -o CMakeFiles/LearnOpenGL.dir/src/triangles.cpp.o -c /home/fredarch/Documents/Github/LearnOpenGl/src/triangles.cpp
 
 CMakeFiles/LearnOpenGL.dir/src/triangles.cpp.i: cmake_force
@@ -190,6 +204,7 @@ LearnOpenGL_OBJECTS = \
 "CMakeFiles/LearnOpenGL.dir/src/Camera.cpp.o" \
 "CMakeFiles/LearnOpenGL.dir/src/Shader.cpp.o" \
 "CMakeFiles/LearnOpenGL.dir/src/glad.c.o" \
+"CMakeFiles/LearnOpenGL.dir/src/light.cpp.o" \
 "CMakeFiles/LearnOpenGL.dir/src/main.cpp.o" \
 "CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o" \
 "CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o" \
@@ -202,6 +217,7 @@ LearnOpenGL: CMakeFiles/LearnOpenGL.dir/src/3d.cpp.o
 LearnOpenGL: CMakeFiles/LearnOpenGL.dir/src/Camera.cpp.o
 LearnOpenGL: CMakeFiles/LearnOpenGL.dir/src/Shader.cpp.o
 LearnOpenGL: CMakeFiles/LearnOpenGL.dir/src/glad.c.o
+LearnOpenGL: CMakeFiles/LearnOpenGL.dir/src/light.cpp.o
 LearnOpenGL: CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
 LearnOpenGL: CMakeFiles/LearnOpenGL.dir/src/rectangle.cpp.o
 LearnOpenGL: CMakeFiles/LearnOpenGL.dir/src/stb_image.cpp.o
@@ -214,7 +230,7 @@ LearnOpenGL: /usr/lib/libGL.so
 LearnOpenGL: /usr/lib/librt.a
 LearnOpenGL: /usr/lib/libm.so
 LearnOpenGL: CMakeFiles/LearnOpenGL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable LearnOpenGL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/fredarch/Documents/Github/LearnOpenGl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable LearnOpenGL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LearnOpenGL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

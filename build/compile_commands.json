@@ -25,6 +25,12 @@
 },
 {
   "directory": "/home/fredarch/Documents/Github/LearnOpenGl/build",
+  "command": "/usr/bin/c++  -I/home/fredarch/Documents/Github/LearnOpenGl/include -I/home/fredarch/Documents/Github/LearnOpenGl/libs/glfw/include -std=gnu++17 -Wall -Wextra -Wpedantic -Wshadow -Wformat=2 -o CMakeFiles/LearnOpenGL.dir/src/light.cpp.o -c /home/fredarch/Documents/Github/LearnOpenGl/src/light.cpp",
+  "file": "/home/fredarch/Documents/Github/LearnOpenGl/src/light.cpp",
+  "output": "CMakeFiles/LearnOpenGL.dir/src/light.cpp.o"
+},
+{
+  "directory": "/home/fredarch/Documents/Github/LearnOpenGl/build",
   "command": "/usr/bin/c++  -I/home/fredarch/Documents/Github/LearnOpenGl/include -I/home/fredarch/Documents/Github/LearnOpenGl/libs/glfw/include -std=gnu++17 -Wall -Wextra -Wpedantic -Wshadow -Wformat=2 -o CMakeFiles/LearnOpenGL.dir/src/main.cpp.o -c /home/fredarch/Documents/Github/LearnOpenGl/src/main.cpp",
   "file": "/home/fredarch/Documents/Github/LearnOpenGl/src/main.cpp",
   "output": "CMakeFiles/LearnOpenGL.dir/src/main.cpp.o"

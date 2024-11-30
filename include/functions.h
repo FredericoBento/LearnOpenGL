@@ -34,4 +34,6 @@ void rotating_multiple_cubes_with_camera(GLFWwindow* window);
 void rotating_multiple_cubes_with_mouse_camera(GLFWwindow* window);
 void rotating_multiple_cubes_with_mouse_camera_class(GLFWwindow* window);
 
+void light1(GLFWwindow* window);
+
 #endif

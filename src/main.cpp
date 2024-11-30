@@ -114,7 +114,8 @@ int main() {
     // rotating_multiple_cubes(window);
     // rotating_multiple_cubes_with_camera(window);
     // rotating_multiple_cubes_with_mouse_camera(window);
-    rotating_multiple_cubes_with_mouse_camera_class(window);
+    // rotating_multiple_cubes_with_mouse_camera_class(window);
+    light1(window);
 
     glDeleteProgram(shaderProgram);
 
